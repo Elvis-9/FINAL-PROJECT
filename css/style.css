@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-hover {
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.box-hover:hover {
+  border: 2px solid white;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #0a0a23;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border: 1px solid white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navItem a {
+  margin: 0 0.8rem;
+  font-weight: 500;
+  color:white;
+  transition: color 0.3s;
+}
+
+.navItem a:hover {
+  color: #00bcd4;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  background-color: inherit;
+}
+
+/* Combined and fixed .card1 */
+.card1 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/net1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card1 h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.card1 p {
+  font-size: 2.0rem;
+  margin-bottom: 1.5rem;
+}
+
+.card1 a {
+  display: inline-block;
+  background-color: #007bff;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.card1 a:hover {
+  background-color: #0056b3;
+}
+
+/* ========== About Section ========== */
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+}
+
+.card2a {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.card2a h1 {
+  color: #0a0a23;
+  font-size: 2rem;
+}
+
+.card2a p {
+  margin: 1rem 0;
+}
+
+.card2b img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Add background image to card2b if you want it as a background */
+.card2b {
+  background-color: #eaeaea;
+  background-image: url('../assets/wifi4.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  min-width: 400px;
+  min-height: 350px;
+}
+
+/* Next card with net3.jpg background */
+.card2c {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  min-width: 400px;
+  min-height: 350px;
+}
+
+.card2a a {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* ========== Catalog & Genres Section ========== */
+.card3,
+.card5 {
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  background-image: url('assets/net3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* Make card3 image size same as card1 */
+.card3 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/net3.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card3 h1,
+.card5 h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card3 p,
+.card5 p {
+  font-size: 1.1rem;
+}
+
+/* Remove background image from card4a */
+.card4a {
+  background: none !important;
+}
+
+/* Add net5n.jpg to card4 with same size as card3 */
+.card4 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* background-image: url('../assets/'); */ /* Removed invalid image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+  
+/* Set background and text color for card4a and card4b */
+.card4a,
+.card4b {
+  background-color: black !important;
+  color: white !important;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+.card4a {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  
+  color: black;
+  min-width: 280px;
+  max-width: 400px;
+  background: url('../assets/fantasy.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card4b {
+  background-color: BLACK;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+/* Add net5n.jpg as background to card6 */
+.card6 {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  background-image: url('../assets/net5n.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  color:white;
+  /* Add text shadow for better visibility */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.card6::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.card6 > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* ========== Author List ========== */
+.industry-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* ======= Card5 Styles Fix ======= */
+.card5 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/net2n.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.industry {
+  background-color: #e0f7fa;
+  color: #007bff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card6b {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.test {
+  background-color:black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+/* ========== Publisher/Partners Slider ========== */
+.card7 {
+  text-align: center;
+}
+
+.scrolling-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrolling-track {
+  display: flex;
+  gap: 100px;
+  animation: scrollLeft 20s linear infinite;
+  padding: 1rem;
+}
+
+.scrolling-track img {
+  height: 60px;
+  object-fit: contain;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ========== Contact Section ========== */
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #f0f8ff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contactDetails {
+  flex: 1;
+  min-width: 280px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #0a0a23;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ========== Footer ========== */
+.footer {
+  background-color: #0a0a23;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 40px;
+}
+
+.footerCard1,
+.footerCard2 {
+  flex: 1;
+  min-width: 260px;
+}
+
+.footerItems {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footerItems p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ========== Sliding Cards Section ========== */
+.slider-container {
+  width: 80%;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card {
+  min-width: 300px;
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card2,
+  .card4,
+  .con,
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* FAQ Section Styles */
+.card8 {
+  background-color: #f8f8f8;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card8 h1, .card8 p {
+  margin: 10px 0;
+}
+
+.faq-list {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.faq-item {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.add-question {
+  margin-top: 30px;
+}
+
+.add-question input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-question button {
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-question button:hover {
+  background-color: #0056b3;
+}
